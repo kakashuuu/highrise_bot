@@ -8,6 +8,7 @@ class Command:
         self.name = "print"
         self.description = "Print someone's data"
         self.aliases = ['location', 'coords']
+        self.permissions = ['print']
         self.cooldown = 5
 
     async def execute(self, user: User, args: list, message: str):

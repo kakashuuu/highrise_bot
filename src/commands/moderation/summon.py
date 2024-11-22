@@ -8,7 +8,7 @@ class Command:
         self.name = "summon"
         self.description = "Teleport a player to your position"
         self.aliases = ['tptome']
-        self.permissions = ['teleport']
+        self.permissions = ['summon']
         self.cooldown = 5
 
     async def execute(self, user: User, args: list, message: str):

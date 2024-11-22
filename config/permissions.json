@@ -9,18 +9,30 @@
                 "print",
                 "say",
                 "walk",
-                "example"
+                "example",
+                "vip",
+                "set",
+                "summons",
+                "tele_setter",
+                "televip_setter",
+                "televip"
             ]
         },
         {
-            "user_id": "change-me",
-            "username": "change-me",
+            "user_id": "64dfce44e30dc3203f475b50",
+            "username": "katty_miaou",
             "permissions": [
                 "emote",
                 "teleport",
                 "print",
                 "say",
-                "walk"
+                "walk",
+                "vip",
+                "set",
+                "summons",
+                "tele_setter",
+                "televip_setter",
+                "televip"
             ]
         }
     ]
