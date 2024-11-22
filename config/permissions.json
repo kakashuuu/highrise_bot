@@ -1,14 +1,15 @@
 {
     "permissions": [
         {
-            "user_id": "change-me",
-            "username": "change-me",
+            "user_id": "669c057a9e348d95fa896b66",
+            "username": "seborok",
             "permissions": [
                 "emote",
                 "teleport",
                 "print",
                 "say",
-                "walk"
+                "walk",
+                "example"
             ]
         },
         {

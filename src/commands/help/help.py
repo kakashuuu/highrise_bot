@@ -1,4 +1,7 @@
 from highrise import User
+from config import config
+
+
 
 
 class Command:
@@ -12,7 +15,13 @@ class Command:
         self.cooldown = 5
 
     async def execute(self, user: User, args: list, message: str):
+        
         # now notice that we used self.bot.highrise and not self.highrise, keep this in mind
-        await self.bot.highrise.chat('this is a help command')
+        await self.bot.highrise.chat(texte = f"""prefix = {config.config.prefix} 
+                                     info tips : wallet 
+                                     random emote : emote (all)
+                                     for moderator : 
+                                        come""")
+
         # now you can use this template for all commands just copy and paste it
         # i hope this helped !

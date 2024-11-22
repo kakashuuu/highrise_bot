@@ -1,5 +1,7 @@
 from highrise import BaseBot
 from highrise import __main__
+from highrise.__main__ import BotDefinition
+
 from highrise.models import AnchorPosition, CurrencyItem, Item, Position, Reaction, SessionMetadata, User
 from src.handlers.handleEvents import handle_chat, handle_join, handle_leave, handle_start, handle_whisper, handle_emote, handle_tips, handle_reactions, handle_movements
 from src.handlers.handleCommands import CommandHandler
@@ -21,7 +23,7 @@ class Bot(BaseBot):
     async def on_whisper(self, user: User, message: str) -> None:
         await handle_whisper(self, user, message)
 
-    async def on_user_join(self, user: User) -> None:
+    async def on_user_join(self, user: User, pos: Position) -> None:
         await handle_join(self, user)
 
     async def on_user_leave(self, user: User) -> None:
@@ -39,11 +41,14 @@ class Bot(BaseBot):
     async def on_user_move(self, user: User, destination: Position | AnchorPosition) -> None:
         await handle_movements(self, user, destination)
 
-    async def run(self, room_id, token):
-        await __main__.main(self, room_id, token)
+    async def run(self, bot_def):
+        await __main__.main([bot_def])
 
 
 if __name__ == "__main__":
+    bot = Bot()
     room_id = authorization.room
-    token = authorization.token
-    arun(Bot().run(room_id, token))
+    api_token = authorization.token
+    bot_def = BotDefinition(bot, room_id, api_token)
+
+    arun(bot_def.bot.run(bot_def))
