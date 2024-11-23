@@ -8,7 +8,7 @@ class Command:
         self.bot = bot
         self.name = "tele"
         self.description = "Teleport a player to a specific position"
-        self.aliases = ['tp']
+        self.aliases = ['tele']
         #self.permissions = ['teleport']
         self.cooldown = 5
 

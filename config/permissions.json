@@ -12,7 +12,7 @@
                 "example",
                 "vip",
                 "set",
-                "summons",
+                "summon",
                 "tele_setter",
                 "televip_setter",
                 "televip"
@@ -29,7 +29,24 @@
                 "walk",
                 "vip",
                 "set",
-                "summons",
+                "summon",
+                "tele_setter",
+                "televip_setter",
+                "televip"
+            ]
+        },
+        {
+            "user_id": "6734ed4e316bf65bb19a922c",
+            "username": "cotton1341",
+            "permissions": [
+                "emote",
+                "teleport",
+                "print",
+                "say",
+                "walk",
+                "vip",
+                "set",
+                "summon",
                 "tele_setter",
                 "televip_setter",
                 "televip"

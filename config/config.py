@@ -37,12 +37,12 @@ class messages:
 
 class permissions:
     # You can add as many IDs as you want, for example: ['id1', 'id2'].
-    owners = ['669c057a9e348d95fa896b66']
-    moderators = ['669c057a9e348d95fa896b66']
+    owners = ['6734ed4e316bf65bb19a922c']
+    moderators = ['6734ed4e316bf65bb19a922c']
 
 
 class authorization:
     # To obtain your token, visit https://highrise.game/ and log in. Then, go to the settings and create a new bot. Accept the terms and generate a token.
     # To obtain your room ID, go to the game and navigate to the top right corner where the player list is displayed. Click on "Share this room" and copy the ID.
-    room = '669c057a9e348d95fa896b66'
+    room = '6734ed4e316bf65bb19a922c'
     token = '16dfb9ca0982c060a9f309d4a1c598b11b73d62c7e8dba5b3aaba3d7d2722718'
