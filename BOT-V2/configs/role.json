@@ -1,0 +1,8 @@
+{
+    "role": {
+        "owner": ["bot_setter", "tele_setter", "televip_setter"],
+        "moderator": ["summon", "emote_all", "player_info", "bot_come", "teleport_player"],
+        "vip": ["televip"],
+        "all": ["make_bot_speak", "help", "tele", "emote"]
+    }
+}

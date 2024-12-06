@@ -51,6 +51,24 @@
                 "televip_setter",
                 "televip"
             ]
+        },
+        {
+            "user_id": "6727bad9c6b0ec4582bd399c",
+            "username": "Louve245",
+            "permissions": [
+                "emote",
+                "teleport",
+                "print",
+                "say",
+                "walk",
+                "vip",
+                "set",
+                "summon",
+                "tele_setter",
+                "televip_setter",
+                "televip"
+            ]
         }
+        
     ]
 }

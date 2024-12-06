@@ -1,6 +1,6 @@
 class config:
     # Basic configuration: If you are unsure how to obtain the Bot ID, simply start the bot and it will be logged in the console.
-    prefix = '!'
+    prefix = "!"
     botID = 'change-me'
     botName = 'change-me'
     ownerName = 'change-me'
