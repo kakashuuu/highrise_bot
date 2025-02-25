@@ -4,7 +4,7 @@ class config:
     botID = '67473ea326de90b560dc2bfe'
     botName = 'senku'
     ownerName = 'kakashi'
-    roomName = 'change-me'
+    roomName = 'Home'
     coordinates = {
         'x': 8.5,
         'y': 0.6000,
