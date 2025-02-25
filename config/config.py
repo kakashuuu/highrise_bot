@@ -1,9 +1,9 @@
 class config:
     # Basic configuration: If you are unsure how to obtain the Bot ID, simply start the bot and it will be logged in the console.
     prefix = "!"
-    botID = 'change-me'
-    botName = 'change-me'
-    ownerName = 'change-me'
+    botID = '67473ea326de90b560dc2bfe'
+    botName = 'senku'
+    ownerName = 'kakashi'
     roomName = 'change-me'
     coordinates = {
         'x': 8.5,
