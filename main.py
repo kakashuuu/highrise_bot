@@ -1,15 +1,14 @@
 from highrise import BaseBot
-from highrise import __main__
-
+from highrise.webapi import HighriseAPI
 from highrise.models import AnchorPosition, CurrencyItem, Item, Position, Reaction, SessionMetadata, User
 from src.handlers.handleEvents import handle_chat, handle_join, handle_leave, handle_start, handle_whisper, handle_emote, handle_tips, handle_reactions, handle_movements
 from src.handlers.handleCommands import CommandHandler
 from asyncio import run as arun
 from config.config import authorization
 
-
 class Bot(BaseBot):
-    def __init__(self):
+    def __init__(self, api: HighriseAPI):
+        self.api = api
         self.command_handler = CommandHandler(self)
         super().__init__()
 
@@ -40,14 +39,13 @@ class Bot(BaseBot):
     async def on_user_move(self, user: User, destination: Position | AnchorPosition) -> None:
         await handle_movements(self, user, destination)
 
-    async def run(self, bot_def):
-        await __main__.main([bot_def])
-
-
 if __name__ == "__main__":
-    bot = Bot()
     room_id = authorization.room
     api_token = authorization.token
-    bot_def = BotDefinition(bot, room_id, api_token)
 
-    arun(bot_def.bot.run(bot_def))
+    # ✅ API Token ka use karke bot initialize karo
+    api = HighriseAPI(api_token)
+    bot = Bot(api)
+
+    # ✅ Bot ko run karo
+    arun(bot.run())
