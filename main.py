@@ -1,6 +1,5 @@
 from highrise import BaseBot
 from highrise import __main__
-from highrise.__main__ import BotDefinition
 
 from highrise.models import AnchorPosition, CurrencyItem, Item, Position, Reaction, SessionMetadata, User
 from src.handlers.handleEvents import handle_chat, handle_join, handle_leave, handle_start, handle_whisper, handle_emote, handle_tips, handle_reactions, handle_movements
