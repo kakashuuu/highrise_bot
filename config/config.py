@@ -45,4 +45,4 @@ class authorization:
     # To obtain your token, visit https://highrise.game/ and log in. Then, go to the settings and create a new bot. Accept the terms and generate a token.
     # To obtain your room ID, go to the game and navigate to the top right corner where the player list is displayed. Click on "Share this room" and copy the ID.
     room = '6746480b6ec0bcb87994c1af'
-    token = '67bd7789fb0dd47dccbea084'
+    token = 'b8584eca67175f99d751eb2f0b9300de11690ece96a7f99da247345800d4337d'
